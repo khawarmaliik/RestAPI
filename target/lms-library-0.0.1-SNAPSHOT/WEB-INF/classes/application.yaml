@@ -1,0 +1,32 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+
+spring.jpa:
+  database: MYSQL
+  hibernate.ddl-auto: update
+  show-sql: true
+
+spring.datasource:
+  platform: mysql
+  driverClassName: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/mvcspring
+  username: root
+  password: malik123
+  
+
+server:
+  port: 8089
+
+---
+
+spring:
+  application:
+    name: Library Management System
+
+server:
+  servlet:
+    context-path: /Library-Management
